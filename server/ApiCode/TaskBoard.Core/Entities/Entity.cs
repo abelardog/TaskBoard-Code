@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace TaskBoard.Core.Entities
 {
-    public class List : Entity
+    public abstract class Entity
     {
-        public string Title { get; set; }
-        public int Order { get; set; }
-        public List<Card> Cards { get; set; }
+        public int Id { get; set; }
     }
 }
