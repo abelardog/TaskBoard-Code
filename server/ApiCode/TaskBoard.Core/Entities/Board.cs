@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace TaskBoard.Core.Entities
 {
-    internal class Board
+    public class Board : Entity
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public List<List> Lists { get; set; }
         public DateTime CreatedAt { get; set; }
